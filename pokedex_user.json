@@ -1,0 +1,73 @@
+{
+  "pokemons": [
+    {
+      "nom": "Mystherbe",
+      "numero": "043",
+      "pv": 45,
+      "atk": 50,
+      "defense": 55,
+      "types": [
+        "Plante",
+        "Poison"
+      ],
+      "niveau": 1,
+      "evolution": "Ortide",
+      "evolution_niveau": 10
+    },
+    {
+      "nom": "Onix",
+      "numero": "095",
+      "pv": 35,
+      "atk": 45,
+      "defense": 160,
+      "types": [
+        "Roche",
+        "Sol"
+      ],
+      "niveau": 1,
+      "evolution": null,
+      "evolution_niveau": null
+    },
+    {
+      "nom": "Roucarnage",
+      "numero": "018",
+      "pv": 80,
+      "atk": 80,
+      "defense": 75,
+      "types": [
+        "Normal",
+        "Vol"
+      ],
+      "niveau": 15,
+      "evolution": null,
+      "evolution_niveau": null
+    },
+    {
+      "nom": "Lamantine",
+      "numero": "087",
+      "pv": 90,
+      "atk": 70,
+      "defense": 80,
+      "types": [
+        "Eau",
+        "Glace"
+      ],
+      "niveau": 10,
+      "evolution": null,
+      "evolution_niveau": null
+    },
+    {
+      "nom": "Soporifik",
+      "numero": "096",
+      "pv": 60,
+      "atk": 48,
+      "defense": 45,
+      "types": [
+        "Psy"
+      ],
+      "niveau": 1,
+      "evolution": "Hypnomade",
+      "evolution_niveau": 10
+    }
+  ]
+}
