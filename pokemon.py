@@ -211,7 +211,7 @@ pokemon_liste = [
 
     Pokemon(nom="Lippoutou", numero="124", pv=65, atk=50, defense=35, types=["Glace", "Psy"], niveau=1,),
     
-    Pokemon(nom="Élektek", numero="125", pv=65, atk=83, defense=57, types=["Électrique"], niveau=1),
+    Pokemon(nom="Élektek", numero="125", pv=65, atk=83, defense=57, types=["Electrique"], niveau=1),
 
     Pokemon(nom="Magmar", numero="126", pv=65, atk=95, defense=57, types=["Feu"], niveau=1,),
     
@@ -232,7 +232,7 @@ pokemon_liste = [
     Pokemon(nom="Évoli", numero="133", pv=55, atk=55, defense=50, types=["Normal"], niveau=1, evolution="Aquali", evolution_niveau=10),
     Pokemon(nom="Aquali", numero="134", pv=130, atk=65, defense=60, types=["Eau"], niveau=10),
     Pokemon(nom="Pyroli", numero="135", pv=130, atk=60, defense=65, types=["Feu"], niveau=10),
-    Pokemon(nom="Voltali", numero="136", pv=130, atk=65, defense=60, types=["Électrique"], niveau=10),
+    Pokemon(nom="Voltali", numero="136", pv=130, atk=65, defense=60, types=["Electrique"], niveau=10),
     
 #-------------------------------------------------------------------------------------------------------------
 
@@ -255,7 +255,7 @@ pokemon_liste = [
     Pokemon(nom="Artikodin", numero="144", pv=90, atk=85, defense=100, types=["Glace", "Vol"], niveau=1),
 
 
-    Pokemon(nom="Électhor", numero="145", pv=90, atk=90, defense=85, types=["Électrique", "Vol"], niveau=1),
+    Pokemon(nom="Électhor", numero="145", pv=90, atk=90, defense=85, types=["Electrique", "Vol"], niveau=1),
 
 
     Pokemon(nom="Sulfura", numero="146", pv=90, atk=100, defense=90, types=["Feu", "Vol"], niveau=1),
@@ -291,7 +291,7 @@ for pokemon in pokemon_liste:
         else:
             print(f"Vous possédez déjà le Pokémon {pokemon_data['nom']} (n° {pokemon_data['numero']}).")
 
-with open('pokedex.json', 'a') as file:
+with open('pokemon/pokedex.json', 'w') as file:
     json.dump(pokedex_data, file, indent=2)
 
 pokedex_user = {"pokemons": []}
@@ -312,10 +312,11 @@ for _ in range(5):
         pokedex_user["pokemons"].append(pokemon_data)
     else:
         print(f"Vous possédez déjà le Pokémon {pokemon_data['nom']} (n° {pokemon_data['numero']}).")
-with open('pokedex_user.json', 'w') as f:
+        
+        
+with open('pokemon/pokedex_user.json', 'w') as f:
     json.dump(pokedex_user, f, indent= 2)
 
 
 print("Le fichier JSON du Pokédex a été créé avec succès.")
-
 

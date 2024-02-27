@@ -11,7 +11,7 @@ class Pok:
         self.types = self.get_infos('types')
     
     def get_infos(self, name):
-        with open('pokedex_user.json', 'r', encoding='utf-8') as f:
+        with open('pokemon/pokedex_user.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
             # Génère un index aléatoire entre 0 et len(data['pokemons']) - 1 inclus
             random_index = random.randint(0, len(data['pokemons']) - 1)

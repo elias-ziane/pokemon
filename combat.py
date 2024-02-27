@@ -64,10 +64,10 @@ class Combat:
         # Calcul de la moyenne des coefficients
         coefficient_moyen = sum(coefficients_attaque) / len(coefficients_attaque)
 
-        # Calculez les dégâts en fonction de l'attaque, de la défense et du multiplicateur de type
+        # Calcul les dégâts en fonction de l'attaque, de la défense et du multiplicateur de type
         degats = int(attaquant.atk * coefficient_moyen) - defenseur.defense
 
-        # Assurez-vous que les dégâts sont au moins égaux à 0
+        # Assure que les dégâts sont au moins égaux à 0
         degats = max(0, degats)
 
         return degats

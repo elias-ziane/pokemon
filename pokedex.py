@@ -5,7 +5,7 @@ from PIL import Image, ImageTk
 import os
 
 # Charger les données du Pokédex depuis le fichier JSON
-with open('pokedex_user.json', 'r') as file:
+with open('pokemon/pokedex.json', 'r') as file:
     pokedex_data = json.load(file)
 
 class PokedexApp:
